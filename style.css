@@ -219,17 +219,23 @@ nav {
     color: var(--blue);
 }
 
-.about {
+.about,
+.reference,
+.trust,
+.contact {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 55px;
 }
+
 .about-img {
     width: 271.99px;
     height: 223.56px;
 }
 
-.about-content {
+.about-content,
+.reference-content,
+.trust-content {
     width: 603px;
 }
 
@@ -238,22 +244,124 @@ nav {
     margin-bottom: 10px;
 }
 
-.about-content h2 {
+.about-content h2, 
+.reference-content h2,
+.trust-content h2,
+.contact-content h2 {
     font-size: var(--fs-500);
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.about-content div {
+.about-content div,
+.reference-content div, 
+.trust-content div, 
+.contact-content div {
     border-bottom: 4px solid var(--light-grey);
     border-radius: 20px;
     height: 4px;
     width: 165px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+.about-content p,
+.reference-content p,
+.trust-content p,
+.contact-content p {
+    color: var(--dark-grey);
+    font-weight: 600;
+    line-height: 150%;
 }
 
 .about-content p {
+    width: 70%;
+}
+
+.reference-content h3 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}    
+
+.reference-img {
+    width: 380.02px;
+    height: 312.32px;
+}
+
+.reference-content p {
+    width: 90%;
+}
+
+.trust-img {
+    width: 380px;
+    height: 256.27px;
+}
+
+.trust-content p {
+    width: 90%;
+}
+
+.trust-content h3 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.trust {
+    margin-bottom: 198px;
+}
+
+.contact-content {
+    width: 592px;
+}
+
+.contact-img {
+    width: 237.3px;
+    height: 230.63px;
+}
+
+.contact-content h3 {
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-weight: 600;
+}  
+
+footer {
+    background-color: var(--dark-blue);
+}
+
+.footer-section {
+    justify-content: center;
+    align-content: center;
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+
+.footer-section ul {
+    margin-right: 70px;
+}
+
+.footer-section ul:last-of-type {
+    margin-right: 0;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.footer-list p {
+    font-weight: 600;
+    margin-bottom: 26px;
+    color: #fff;
+}
+
+.footer-list li {
+    list-style-type: none;
+    line-height: 150%;
     color: var(--dark-grey);
     font-weight: 600;
-    width: 70%;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 53px;
+    color: var(--light-grey);
 }
