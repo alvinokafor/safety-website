@@ -426,12 +426,17 @@ footer {
 
     .traffipax,
     .heating {
-    margin-bottom: 2.8125rem;
-}
+        margin-bottom: 2.8125rem;
+    }
 
     .traffipax-content,
     .heating-content {
         text-align: center;
+    }
+
+    .traffipax-content br,
+    .heating-content br {
+        display: none;
     }
 
     .traffipax-content h2,
