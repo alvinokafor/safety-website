@@ -254,7 +254,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 170px;
-    flex-wrap: wrap;
+
 }
 
 
@@ -262,32 +262,42 @@ nav {
 .guides-content {
     text-align: center;
     width: 450px;
+    flex-direction: column;
 }
 
-.manuals-content h3,
-.guides-content h3 {
+.manuals-content div:nth-of-type(2),
+.guides-content div:nth-of-type(2) {
+    margin-bottom: 98px;
+}
+
+.manual-download button {
+    background-color: var(--pink);
+}
+
+.manual-download h3,
+.guides-download h3 {
     color: #000;
     margin-bottom: 40px;
     font-weight: 700;
 }
 
-.manuals-content h2, 
-.guides-content h2 {
+.manuals-header h2, 
+.guides-header h2 {
     font-size: var(--fs-500);
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.manuals-content h2 {
+.manuals-header h2 {
     color: var(--pink);
 }
 
-.guides-content h2 {
+.guides-header h2 {
     color: var(--blue);
 }
 
-.manuals-content div,
-.guides-content div {
+.manuals-header div,
+.guides-header div {
     border-bottom: 4px solid var(--light-grey);
     border-radius: 20px;
     height: 4px;
@@ -296,16 +306,13 @@ nav {
     margin-inline: auto;
 }
 
-.manuals-content p,
-.guides-content p {
+.manuals-download p,
+.guide-download p {
     color: var(--dark-grey);
     font-weight: 600;
     line-height: 150%;
 }
 
-.downloads-wrap {
-    margin-top: 90px;
-}
 
 footer {
     background-color: var(--dark-blue);
@@ -415,14 +422,28 @@ footer {
         margin-top: 20px;
     }
 
-    .traffipax,
-    .heating {
-        margin-bottom: 2.8125rem;
+    .guides1 {
+        flex-direction: column;
+    }
+
+    .guides1 p {
+        width: 331px;
+    }
+
+    .manuals-content,
+    .guides-content {
+    width: 331px;
+}
+
+    .guides-content {
+        margin-top: 90px;
     }
 
     .manuals-content,
     .guides-content {
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .manuals-content br,
